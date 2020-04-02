@@ -1,7 +1,7 @@
 This contains *most* of the files for the game. The file that is missing is the lake because it is bigger than 25mb but I include
 a duplicate of the baby duck so hopefully the game will still compile and run.
 
-A youtube playthrough exists here: youtube.com/video/QXaMRL25Adc
+A youtube playthrough exists here: https://youtu.be/QXaMRL25Adc
 
 
 wasd / left joystick: move and turn
