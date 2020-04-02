@@ -1,0 +1,23 @@
+[gd_scene format=2]
+
+[node name="Node" type="Node"]
+
+[node name="Label" type="Label" parent="."]
+margin_left = 2.69442
+margin_top = 2.85001
+margin_right = 42.6944
+margin_bottom = 16.85
+text = "Objective: Go to the lake"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label2" type="Label" parent="."]
+margin_left = 6.34152
+margin_top = 20.6552
+margin_right = 227.342
+margin_bottom = 34.6552
+text = "Restarts: 0"
+__meta__ = {
+"_edit_use_anchors_": false
+}
