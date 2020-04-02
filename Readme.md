@@ -10,5 +10,5 @@ space / PS X / Xbox A: Jump/ Double Jump / Glide / Fall
 Shift / L1 / L2: Run
 R / Select: restart
 
-Problems that exist: The final cutscene only works if you restart the game manually.
+Problems that exist:
 The cutscene only plays in the small window such that increasing the size of window will not scale the video sadly
