@@ -1,0 +1,60 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://tree_4.glb" type="PackedScene" id=1]
+
+[sub_resource type="BoxShape" id=1]
+extents = Vector3( 1.25103, 6.3549, 1 )
+
+[sub_resource type="BoxShape" id=2]
+extents = Vector3( 4.54459, 1.71962, 1 )
+
+[sub_resource type="BoxShape" id=3]
+extents = Vector3( 4.18752, 1, 1 )
+
+[sub_resource type="BoxShape" id=4]
+extents = Vector3( 1, 4.04446, 1 )
+
+[sub_resource type="BoxShape" id=5]
+extents = Vector3( 1, 4.02891, 1 )
+
+[sub_resource type="CylinderShape" id=6]
+radius = 5.13123
+height = 6.62435
+
+[sub_resource type="CylinderShape" id=7]
+radius = 4.66981
+height = 9.19563
+
+[node name="StaticBody" type="StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.534398, 3.39277, 0 )
+
+[node name="tree_4" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.31515, -3.38866, 0.184798 )
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.303577, 2.82855, 0 )
+shape = SubResource( 1 )
+
+[node name="CollisionShape2" type="CollisionShape" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.32123, 7.86394, 0.000709534 )
+shape = SubResource( 2 )
+
+[node name="CollisionShape3" type="CollisionShape" parent="."]
+transform = Transform( 0.97633, 0.216286, 0, -0.216286, 0.97633, 0, 0, 0, 1, -5.98511, 8.9047, 0.0663967 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape4" type="CollisionShape" parent="."]
+transform = Transform( 0.876021, 0.482274, 0, -0.482274, 0.876021, 0, 0, 0, 1, -7.12512, 12.5897, -0.0876732 )
+shape = SubResource( 4 )
+
+[node name="CollisionShape5" type="CollisionShape" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8.67375, 10.3497, 0 )
+shape = SubResource( 5 )
+
+[node name="CollisionShape6" type="CollisionShape" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8.25301, 19.2799, 0 )
+shape = SubResource( 6 )
+
+[node name="CollisionShape7" type="CollisionShape" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5.6991, 21.1458, 0 )
+shape = SubResource( 7 )

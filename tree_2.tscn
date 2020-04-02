@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://tree_2.glb" type="PackedScene" id=1]
+
+[sub_resource type="BoxShape" id=1]
+extents = Vector3( 2.10997, 6.65014, 2.0143 )
+
+[sub_resource type="CylinderShape" id=2]
+radius = 4.5549
+height = 9.0126
+
+[node name="StaticBody" type="StaticBody"]
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.289221, 6.62052, 0.286354 )
+shape = SubResource( 1 )
+
+[node name="tree_2" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0737362, 4.69539, 0.26407 )
+
+[node name="CollisionShape2" type="CollisionShape" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.14785, 17.642, 0.147071 )
+shape = SubResource( 2 )

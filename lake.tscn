@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://lake.glb" type="PackedScene" id=1]
+
+[sub_resource type="BoxShape" id=8]
+
+[node name="StaticBody" type="StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.02578, 0 )
+
+[node name="lake" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.21984, -3.04505, -5.10138 )
+
+[node name="CollisionShape7" type="CollisionShape" parent="."]
+transform = Transform( 100, 0, 0, 0, 20, 0, 0, 0, 100, 0, 11.8276, 0 )
+shape = SubResource( 8 )
